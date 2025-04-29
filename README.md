@@ -3,15 +3,15 @@
 	
     a. Backpropagation-based Trainers
 	    
-        `backprop.py` (BP-Vanilla, BP-Checkpointing, BP-Accumulate) can be executed through `bash run_backprop_job.sh`.
+    `backprop.py` (BP-Vanilla, BP-Checkpointing, BP-Accumulate) can be executed through `bash run_backprop_job.sh`.
     
     b. Zero-order-based Trainers
         
-        `zero_finite_differences.py` (ZO-Vanilla, ZO-Accumulate, ZO-Multiple, ZO-Adaptive), `svrg_zero_finite_differences.py` (ZO-SVRG), and `sparse_zero_finite_differences.py` (ZO-Sparse) can be all executed through `bash run_zo_job.sh`.
+    `zero_finite_differences.py` (ZO-Vanilla, ZO-Accumulate, ZO-Multiple, ZO-Adaptive), `svrg_zero_finite_differences.py` (ZO-SVRG), and `sparse_zero_finite_differences.py` (ZO-Sparse) can be all executed through `bash run_zo_job.sh`.
     
     c. Forward-mode AD-based Trainers
         
-        `forward_mode_ad_beta.py` (FmAD-Vanilla, FmAD-Multiple, FmAD-Adaptive), `more_forward_mode_ad_beta.py` (FmAD-Accumulate), `svrg_forward_mode_ad_beta` (FmAD-SVRG) and `sparse_forward_mode_ad_beta.py` (FmAD-Sparse) can be all executed through `bash run_zo_job.sh`.
+    `forward_mode_ad_beta.py` (FmAD-Vanilla, FmAD-Multiple, FmAD-Adaptive), `more_forward_mode_ad_beta.py` (FmAD-Accumulate), `svrg_forward_mode_ad_beta` (FmAD-SVRG) and `sparse_forward_mode_ad_beta.py` (FmAD-Sparse) can be all executed through `bash run_zo_job.sh`.
  
  2.    All the hyperparameters will be set through the `.sh` files for their corresponding gradient computation method. 
  
