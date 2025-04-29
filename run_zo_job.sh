@@ -91,9 +91,9 @@ if echo "$method" | grep -qx "svrg_zero_order_finite_differences"; then
     echo "Starting $method on $dataset, Experiment $experiment_name"
     
     mkdir -p $results_dir 
-    cp svrg_zero_order_finite_differences.py $results_dir
+    cp ./trainers/svrg_zero_order_finite_differences.py $results_dir
     
-    python3 svrg_zero_order_finite_differences.py \
+    python3 ./trainers/svrg_zero_order_finite_differences.py \
         --partition_count $partition_count --epochs $epochs \
         --batch_size $batch_size --lr $lr --optimizer $optimizer \
         --max_batches $max_batches --momentum $momentum\
@@ -113,9 +113,9 @@ elif echo "$method" | grep -qx "sparse_zero_order_finite_differences"; then
     echo "Starting $method on $dataset, Experiment $experiment_name"
     
     mkdir -p $results_dir 
-    cp sparse_zero_order_finite_differences.py $results_dir
+    cp ./trainers/sparse_zero_order_finite_differences.py $results_dir
     
-    python3 sparse_zero_order_finite_differences.py \
+    python3 ./trainers/sparse_zero_order_finite_differences.py \
         --partition_count $partition_count --epochs $epochs \
         --batch_size $batch_size --lr $lr --optimizer $optimizer \
         --max_batches $max_batches --momentum $momentum\
@@ -135,9 +135,9 @@ elif echo "$method" | grep -qx "zero_order_finite_differences"; then
     echo "Starting $method on $dataset, Experiment $experiment_name"
     
     mkdir -p $results_dir 
-    cp zero_order_finite_differences.py $results_dir
+    cp ./trainers/zero_order_finite_differences.py $results_dir
     
-    python3 zero_order_finite_differences.py \
+    python3 ./trainers/zero_order_finite_differences.py \
         --partition_count $partition_count --epochs $epochs \
         --batch_size $batch_size --lr $lr --optimizer $optimizer \
         --max_batches $max_batches --momentum $momentum\
@@ -158,9 +158,9 @@ elif echo "$method" | grep -qx "mezo"; then
     echo "Starting $method on $dataset, Experiment $experiment_name"
     
     mkdir -p $results_dir 
-    cp mezo.py $results_dir
+    cp ./trainers/mezo.py $results_dir
     
-    python3 mezo.py \
+    python3 ./trainers/mezo.py \
         --partition_count $partition_count --epochs $epochs \
         --batch_size $batch_size --lr $lr --optimizer $optimizer \
         --max_batches $max_batches --momentum $momentum\

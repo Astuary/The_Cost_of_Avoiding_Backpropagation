@@ -66,9 +66,9 @@ results_dir=./results/${dataset}/${method}/${model_name_shortened}/${experiment_
 echo "Starting $method on $dataset, Experiment $experiment_name"
 
 mkdir -p $results_dir 
-cp backprop.py $results_dir
+cp ./trainers/backprop.py $results_dir
 
-python3 backprop.py \
+python3 ./trainers/backprop.py \
     --partition_count $partition_count --epochs $epochs \
     --batch_size $batch_size --lr $lr --optimizer $optimizer \
     --max_batches $max_batches --momentum $momentum \

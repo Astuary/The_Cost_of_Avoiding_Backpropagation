@@ -84,9 +84,9 @@ if echo "$method" | grep -qx "more_forward_mode_beta"; then
     echo "Starting $method with $dataset, Experiment $experiment_name"
     
     mkdir -p $results_dir 
-    cp more_forward_mode_ad_beta.py $results_dir
+    cp ./trainers/more_forward_mode_ad_beta.py $results_dir
     
-    python3 more_forward_mode_ad_beta.py \
+    python3 ./trainers/more_forward_mode_ad_beta.py \
         --partition_count $partition_count --epochs $epochs \
         --batch_size $batch_size --lr $lr --optimizer $optimizer \
         --max_batches $max_batches --momentum $momentum\
@@ -107,9 +107,9 @@ elif echo "$method" | grep -qx "svrg_forward_mode_beta"; then
     echo "Starting $method with $dataset, Experiment $experiment_name"
     
     mkdir -p $results_dir 
-    cp svrg_forward_mode_ad_beta.py $results_dir
+    cp ./trainers/svrg_forward_mode_ad_beta.py $results_dir
     
-    python3 svrg_forward_mode_ad_beta.py \
+    python3 ./trainers/svrg_forward_mode_ad_beta.py \
         --partition_count $partition_count --epochs $epochs \
         --batch_size $batch_size --lr $lr --optimizer $optimizer \
         --max_batches $max_batches --momentum $momentum\
@@ -129,9 +129,9 @@ elif echo "$method" | grep -qx "sparse_forward_mode_beta"; then
     echo "Starting $method with $dataset, Experiment $experiment_name"
     
     mkdir -p $results_dir 
-    cp sparse_forward_mode_ad_beta.py $results_dir
+    cp ./trainers/sparse_forward_mode_ad_beta.py $results_dir
     
-    python3 sparse_forward_mode_ad_beta.py \
+    python3 ./trainers/sparse_forward_mode_ad_beta.py \
         --partition_count $partition_count --epochs $epochs \
         --batch_size $batch_size --lr $lr --optimizer $optimizer \
         --max_batches $max_batches --momentum $momentum\
@@ -151,9 +151,9 @@ elif echo "$method" | grep -qx "forward_mode_beta"; then
     echo "Starting $method with $dataset, Experiment $experiment_name"
     
     mkdir -p $results_dir 
-    cp forward_mode_ad_beta.py $results_dir
+    cp ./trainers/forward_mode_ad_beta.py $results_dir
     
-    python3 forward_mode_ad_beta.py \
+    python3 ./trainers/forward_mode_ad_beta.py \
         --partition_count $partition_count --epochs $epochs \
         --batch_size $batch_size --lr $lr --optimizer $optimizer \
         --max_batches $max_batches --momentum $momentum\
